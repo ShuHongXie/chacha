@@ -1,9 +1,23 @@
 #include <stdio.h>
-
-int main()
+void main()
 {
-  int a = 2, b = 3, c = 4;
-  a = b++ / 1 * 4 + b + --b;
-  printf("%d,%d\n", a, b);
-  return 0;
+  int max(int x, int y); // max函数在main函数之后定义，必须在调用前进行声明来通知编译系统，让系统知道max已定义
+  int a, b, c;
+  scanf("%d,%d", &a, &b);
+  c = max(a, b);
+  printf("max=%d\n", c);
+}
+
+int max(int x, int y)
+{
+  int z;
+  if (x > z)
+  {
+    z = x;
+  }
+  else
+  {
+    z = y;
+  }
+  return z;
 }
