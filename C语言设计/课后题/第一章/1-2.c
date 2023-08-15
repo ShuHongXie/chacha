@@ -6,7 +6,7 @@ int main()
     int a, b, c;
     scanf("%d,%d,%d", &a, &b, &c);
     int max = compare(a, b, c);
-    printf("最大值为=%d", max);
+    printf("最大数=%d", max);
     return 0;
 }
 
