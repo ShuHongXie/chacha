@@ -4,31 +4,15 @@
 void main()
 {
   char arr[100] = "******";
+  char str[100] = "";
+  char space[100] = " ";
   for (int i = 0; i < 5; i++)
   {
-    if (i == 0)
-    {
-      printf("%s\n", arr);
-    }
-    else if (i == 1)
-    {
-      char str[100] = " ";
-      printf("%s\n", strcat(str, arr));
-    }
-    else if (i == 2)
-    {
-      char str[100] = "  ";
-      printf("%s\n", strcat(str, arr));
-    }
-    else if (i == 3)
-    {
-      char str[100] = "   ";
-      printf("%s\n", strcat(str, arr));
-    }
-    else if (i == 4)
-    {
-      char str[100] = "    ";
-      printf("%s\n", strcat(str, arr));
-    }
+    printf("%s\n", arr);
+    char s[100] = "";
+    strcpy(s, space);
+    strcat(s, arr);
+    arr[0] = '\0'; // 置空
+    strcat(arr, s);
   }
 }
