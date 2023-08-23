@@ -8,7 +8,8 @@
     "chrono": "c",
     "limits": "c",
     "ratio": "c",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "*.tcc": "c"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }

@@ -9,11 +9,14 @@ void main()
   int getMinBei(int a, int b);
   int getMaxYue(int a, int b);
   int a, b, max, min;
-  // scanf("%d,%d", a, b);
-  max = getMinBei(12, 18);
-  printf("当前输入两个值的最小公倍数为:%d\n", max);
+  scanf("%d,%d", &a, &b);
+  max = getMinBei(a, b);
+  printf("%d和%d的最小公倍数为:%d\n", a, b, max);
+  min = getMaxYue(a, b);
+  printf("%d和%d的最大公约数为:%d\n", a, b, min);
 }
 
+// 获取最小公倍数
 int getMinBei(int a, int b)
 {
   int minBei = 0;
@@ -38,19 +41,25 @@ int getMinBei(int a, int b)
   return minBei;
 }
 
+// 获取最大公约数
 int getMaxYue(int a, int b)
 {
   int maxYue = 0;
-  for (int i = a;; i--)
+  for (int i = 1;; i++)
   {
-
-    for (int j = b;; j--)
+    for (int j = 1;; j++)
     {
-      if (b % i >= a % i)
+      if (b / j == a / i)
       {
+        maxYue = b / j;
+        break;
+      }
+      if (j > b)
+      {
+        break;
       }
     }
-    if (maxYue != 0)
+    if (maxYue != 0 || i > a)
     {
       break;
     }
