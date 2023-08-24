@@ -9,7 +9,8 @@
     "limits": "c",
     "ratio": "c",
     "stdio.h": "c",
-    "*.tcc": "c"
+    "*.tcc": "c",
+    "sstream": "c"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }
