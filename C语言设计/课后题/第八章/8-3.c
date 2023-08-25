@@ -10,10 +10,11 @@ void main()
   int *translateFn(int *arr);
   void printFn(int *arr);
   int *arr = *getTenNumber();
-  for (int i = 0; i < 5; i++)
-  {
-    printf("%d\n", *(arr + i));
-  }
+  printf("%d\n", sizeof(*arr));
+  // for (int i = 0; i < 5; i++)
+  // {
+  //   printf("%d\n", *(arr + i));
+  // }
   *arr = *translateFn(*arr);
   printf("Ö´ÐÐ\n");
   printFn(*arr);
