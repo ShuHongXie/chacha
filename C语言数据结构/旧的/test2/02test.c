@@ -18,6 +18,7 @@ typedef struct
   char name[50];
   float price;
 } Book;
+
 typedef struct
 {
   Book elem[MAXSIZE];
