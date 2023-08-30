@@ -63,7 +63,7 @@ void deleteBook(BookNode *l, int i)
   }
   retainNode = p->next;
   p->next = retainNode->next;
-  free(retainNode);
+  free(retainNode); // free释放
   retainNode = NULL;
   return;
 }
