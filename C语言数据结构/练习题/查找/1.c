@@ -4,19 +4,21 @@ void main()
 {
 
   int binary_search(int *a, int n, int key);
-  int arr[] = {0, 1, 16, 24, 35, 47, 59, 62, 73, 88, 99};
-  printf("值为62的在第%d个", binary_search(arr, 10, 62));
+  int arr[] = {4, 6, 10, 12, 20, 30, 50, 70, 88, 100};
+  printf("??62?????%d??", binary_search(arr, 10, 58));
 }
 
-// 折半查找/二分查找
+// ??????/???????
 int binary_search(int *a, int n, int key)
 {
   int low, high, mid;
-  low = 1;  // 定义最低下标为首位
-  high = n; // 定义最高下标为记录末位
+  low = 1;  // ????????±????λ
+  high = n; // ????????±??????λ
   while (low <= high)
   {
     mid = (low + high) / 2;
+    printf("index为%d\n", mid);
+    printf("值为%d\n", a[mid]);
     if (key < a[mid])
     {
       high = mid - 1;
