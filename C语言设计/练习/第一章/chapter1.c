@@ -6,6 +6,8 @@ void main()
   scanf("%d,%d", &a, &b);
   c = max(a, b);
   printf("max=%d\n", c);
+  int e = 4, f = 3, g = 5;
+  printf("%d\n", e < f < g);
 }
 
 int max(int x, int y)
