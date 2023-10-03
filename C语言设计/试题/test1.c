@@ -1,20 +1,17 @@
 #include <stdio.h>
 
-void main()
+int fun(int x)
 {
-  int i, n = 0;
-  for (i = 2; i < 5; i++)
+  if (x / 2 > 1)
   {
-    do
-    {
-      if (i % 3)
-        continue;
-      // printf("走了i=%d\n", i);
-      n++;
-      printf("走了i=%d,n=%d\n", i, n);
-    } while (!i);
-    printf("经过\n");
-    n++;
+    fun(x / 2);
   }
-  printf("n=%d\n", n);
+  return (printf("%d\n", x));
+};
+
+int main()
+{
+  int fun(int x);
+  fun(7);
+  return 0;
 }
