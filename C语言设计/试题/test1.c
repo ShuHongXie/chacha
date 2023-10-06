@@ -11,7 +11,10 @@ int fun(int x)
 
 int main()
 {
-  int fun(int x);
-  fun(7);
+  // int fun(int x);
+  // fun(7);
+  int j = 0;
+  --j;
+  printf("%d", j);
   return 0;
 }
