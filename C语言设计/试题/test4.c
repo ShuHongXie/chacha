@@ -64,7 +64,9 @@ void main()
   // printf("f=%f\n", f);
   // printf("x=%f\n", x);
   // printf("a=%lf\n", a);
-  int a, b, c;
-  scanf("%d%d%d", &a, &b, &c);
-  printf("%d,%d,%d", a, b, c);
+  int k = 3,
+      s[2];
+  // s[0] = k;
+  // k = s[1] * 10;
+  printf("%d", s[1]);
 }
