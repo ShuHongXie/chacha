@@ -68,5 +68,8 @@ void main()
       s[2];
   // s[0] = k;
   // k = s[1] * 10;
-  printf("%d", s[1]);
+  char a[5] = {'g', 'o', 'o', 'd', '\0'};
+  int *p = a + 1;
+
+  printf("%s", p);
 }
