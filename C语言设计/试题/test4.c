@@ -68,8 +68,13 @@ void main()
       s[2];
   // s[0] = k;
   // k = s[1] * 10;
-  char a[5] = {'g', 'o', 'o', 'd', '\0'};
-  int *p = a + 1;
+  // char a[5] = {'g', 'o', 'o', 'd', '\0'};
+  // int *p = a + 1;
 
-  printf("%s", p);
+  // printf("%s", p);
+  int num[10] = {1, 2, 3, 4, 6, 7, 8};
+  int *p = num;
+  printf("%d", *p);
+  p++;
+  printf("%d", *p);
 }
