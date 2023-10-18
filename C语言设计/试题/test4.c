@@ -72,9 +72,13 @@ void main()
   // int *p = a + 1;
 
   // printf("%s", p);
-  int num[10] = {1, 2, 3, 4, 6, 7, 8};
-  int *p = num;
-  printf("%d", *p);
-  p++;
-  printf("%d", *p);
+  // int num[10] = {1, 2, 3, 4, 6, 7, 8};
+  // int *p = num;
+  // printf("%d", *p);
+  // p++;
+  // printf("%d", *p);
+  int a = 5, b = 6, c = 7, d = 8, m = 2, n = 2;
+  (m = a > b) && (n = c < d);
+  printf("%d\n", m);
+  printf("%d", n);
 }
