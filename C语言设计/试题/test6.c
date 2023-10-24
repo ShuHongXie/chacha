@@ -1,4 +1,5 @@
 #include <stdio.h>
+// #include <stdlib.h>
 
 getMax(int a, int b)
 {
@@ -49,8 +50,16 @@ void main()
   // printf("%d", n);
 
   // 函数指针使用整型传输时的情况
-  int a = 100;
-  char c[] = "asd";
-  testFunc(&a, c);
-  printf("%d,%s", a, c);
+  // int a = 100;
+  // char c[] = "asd";
+  // testFunc(&a, c);
+  // printf("%d,%s", a, c);
+  
+  char str1[] = "ismyline";
+  char str2[8] = "ismyline";
+  int z= 4;
+  printf("%d\n", sizeof(str1));
+  printf("%d\n", sizeof(str2));
+  printf("%d\n", sizeof(z));
+  printf("%s\n", str2);
 }
