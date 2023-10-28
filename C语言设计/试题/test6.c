@@ -1,16 +1,16 @@
 #include <stdio.h>
 // #include <stdlib.h>
 
-getMax(int a, int b)
-{
-  return a + b;
-}
+// getMax(int a, int b)
+// {
+//   return a + b;
+// }
 
-void testFunc(int *b, char *c)
-{
-  *b = 3;
-  *(c + 1) = 'j';
-}
+// void testFunc(int *b, char *c)
+// {
+//   *b = 3;
+//   *(c + 1) = 'j';
+// }
 
 void main()
 {
@@ -33,12 +33,12 @@ void main()
   //   printf("%d", t);
   // }
 
-  // ÑéÖ¤º¯ÊýÄ¬ÈÏÖµÊÇ·ñÎªint
+  // ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½Öµï¿½Ç·ï¿½Îªint
   // int a = 3, b = 4, c;
   // c = getMax(a, b);
   // printf("%d", c);
 
-  // ×î´ó¹«Ô¼Êý
+  // ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½
   // int r;
   // int m = 12, n = 9;
   // while ((r = m % n) != 0)
@@ -49,17 +49,30 @@ void main()
   // }
   // printf("%d", n);
 
-  // º¯ÊýÖ¸ÕëÊ¹ÓÃÕûÐÍ´«ÊäÊ±µÄÇé¿ö
+  // ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½
   // int a = 100;
   // char c[] = "asd";
   // testFunc(&a, c);
   // printf("%d,%s", a, c);
-  
-  char str1[] = "ismyline";
-  char str2[8] = "ismyline";
-  int z= 4;
-  printf("%d\n", sizeof(str1));
-  printf("%d\n", sizeof(str2));
-  printf("%d\n", sizeof(z));
-  printf("%s\n", str2);
+
+  // char str1[] = "ismyline";
+  // char str2[8] = "ismylin";
+  // int z = 4;
+  // printf("%d\n", sizeof(str1));
+  // printf("%d\n", sizeof(str2));
+  // printf("%d\n", sizeof(z));
+  // printf("%s\n", str2);
+
+  int arr[] = {1, 2, 3};
+  // int *p = arr;
+  // printf("%d\n", *(p + 1));
+  // printf("%d\n", p[2]);
+  // printf("----");
+  // int *p;
+  // p = &arr;
+
+  int x, y;
+  x = 2;
+  y = x++ - 1;
+  printf("%d,%d", x, y);
 }
