@@ -37,9 +37,24 @@ void main()
   // p = a(4);
   // printf("%d", *p);
 
-  int a = 100;
-  int *p1 = &a;
-  int **p2 = &p1;
-  int ***p3 = &p2;
-  printf("%d, %d, %d, %d\n", a, *p1, **p2, ***p3);
+  // int a = 100;
+  // int *p1 = &a;
+  // int **p2 = &p1;
+  // int ***p3 = &p2;
+  // printf("%d, %d, %d, %d\n", a, *p1, **p2, ***p3); // 打印 100,100，100,100
+
+  int a = 1;
+  int *pa = &a;
+  int b = 2;
+  int *pb = &b;
+  int c = 3;
+  int *pc = &c;
+  int d = 4;
+  int *pd = &d;
+  int e = 5;
+  int *pe = &e;
+
+  int *arr1[5] = {&a, &b, &c, &d, &e};
+  int *arr2[5] = {pa, pb, pc, pd, pe};
+  printf("%d", *arr2[2]);
 }
