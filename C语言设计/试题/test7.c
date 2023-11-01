@@ -43,18 +43,27 @@ void main()
   // int ***p3 = &p2;
   // printf("%d, %d, %d, %d\n", a, *p1, **p2, ***p3); // 打印 100,100，100,100
 
-  int a = 1;
-  int *pa = &a;
-  int b = 2;
-  int *pb = &b;
-  int c = 3;
-  int *pc = &c;
-  int d = 4;
-  int *pd = &d;
-  int e = 5;
-  int *pe = &e;
+  // int a = 1;
+  // int *pa = &a;
+  // int b = 2;
+  // int *pb = &b;
+  // int c = 3;
+  // int *pc = &c;
+  // int d = 4;
+  // int *pd = &d;
+  // int e = 5;
+  // int *pe = &e;
 
-  int *arr1[5] = {&a, &b, &c, &d, &e};
-  int *arr2[5] = {pa, pb, pc, pd, pe};
-  printf("%d", *arr2[2]);
+  // int *arr1[5] = {&a, &b, &c, &d, &e};
+  // int *arr2[5] = {pa, pb, pc, pd, pe};
+  // printf("%d", *arr2[2]);
+
+  int x = 11;
+  printf("%d", 1 && 2);
+
+  char arr[2][4];
+  strcpy(arr, "you");
+  strcpy(arr[1], "me");
+  arr[0][3] = '&';
+  printf("%s\n", arr);
 }
