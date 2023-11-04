@@ -94,12 +94,27 @@
 //   return (*(p1 + i) - *(p2 + i)); /*����ʱ���ؽ��Ϊ��һ�������ַ�ASCII��Ĳ�ֵ*/
 // }
 
+int abc(char *ps)
+{
+  char *p;
+  p = ps;
+  printf("%d\n", ps);
+  printf("------------");
+  while (*p++)
+  {
+    printf("%d\n", *p++);
+  };
+  return (p - ps);
+}
+
 void main()
 {
-  // char *s = "\t\'Name \\Address\n";
+  char *s = "\t\'Name \\Address\n";
   // printf("%d", strlen(s));
 
-  int x[8] = {8, 7, 6, 5, 0, 0}, *s;
-  s = x + 3;
-  printf("%d\n", s[0]);
+  // int x[8] = {8, 7, 6, 5, 0, 0}, *s;
+  // s = x + 3;
+  // printf("%d\n", s[0]);
+  // abc(s);
+  printf("%d", abc(s));
 }
