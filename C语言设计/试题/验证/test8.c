@@ -98,12 +98,14 @@ int abc(char *ps)
 {
   char *p;
   p = ps;
-  printf("%d\n", ps);
-  printf("------------");
+  printf("------------%d\n", ps);
+  printf("------------%d\n", *p);
+  printf("------------%d\n", p);
   while (*p++)
   {
-    printf("%d\n", *p++);
+    printf("------------%c\n", *p);
   };
+  printf("------------%d\n", p);
   return (p - ps);
 }
 
@@ -116,5 +118,56 @@ void main()
   // s = x + 3;
   // printf("%d\n", s[0]);
   // abc(s);
-  printf("%d", abc(s));
+  // printf("%d", abc(s));
+
+  int func(int a, int b)
+  {
+    static int m = 0, i = 2;
+    i += m + 1;
+    m = i + a + b;
+    return (m);
+  }
+  // 第一次： k=4, m = 1, i = 3, m = 8, 第一次打印8
+  // 第二次：i = 3+9 = 12, m = 12+4+1 = 17，第二次打印17
+  // main()
+  // {
+  //   int k = 4, m = 1, n;
+  //   n = func(k, m);
+  //   printf("%d,", n);
+  //   n = func(k, m);
+  //   printf("%d ", n);
+  // }
+
+  // 输入ABCdef
+  // char ch;
+  // while ((ch = getchar()) != '\n')
+  // {
+  //   if (ch >= 'A' && ch <= 'Z')
+  //   {
+  //     ch = ch + 32;
+  //   }
+  //   else if (ch >= 'a' && ch <= 'z')
+  //   {
+  //     ch = ch - 32;
+  //   }
+
+  //   printf("%c", ch);
+  // }
+  // printf("\n");
+
+  int *f(int *x, int *y)
+  {
+    if (*x < *y)
+      return x;
+    else
+      return y;
+  }
+  main()
+  {
+    int a = 7, b = 8, *p, *q, *r;
+    p = &a;
+    q = &b;
+    r = f(p, q);
+    printf("%d,%d,%d\n", *p, *q, *r);
+  }
 }
