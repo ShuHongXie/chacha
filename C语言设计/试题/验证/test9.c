@@ -53,8 +53,24 @@ fun(char *s, int p1, int p2)
 //   printf("%d,%s", t.x, t.s);
 // }
 
+void dele(char *s)
+{
+  int n = 0, i;
+  for (i = 0; s[i]; i++)
+  {
+    if (!(s[i] >= '0' && s[i] <= '9'))
+    {
+      printf("%d", n);
+      s[n++] = s[i];
+        }
+  }
+  printf("%d", n);
+  s[n] = '\0';
+}
+
 void main()
 {
-  int i = 1;
-  printf("%d====%d====%d", i++, ++i, ++i);
+  char str[] = "this2csd";
+  dele(str);
+  printf("%s", str);
 }
