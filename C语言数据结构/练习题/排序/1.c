@@ -27,6 +27,7 @@ void insertSort(int arr[], int len)
   {
     t = arr[i];
     j = i - 1;
+    // 921 291  129
     while (j >= 0 && arr[j] > t)
     {
       arr[j + 1] = arr[j];
