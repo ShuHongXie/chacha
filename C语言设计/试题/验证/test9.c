@@ -62,7 +62,7 @@ void dele(char *s)
     {
       printf("%d", n);
       s[n++] = s[i];
-        }
+    }
   }
   printf("%d", n);
   s[n] = '\0';
@@ -70,7 +70,7 @@ void dele(char *s)
 
 void main()
 {
-  char str[] = "this2csd";
-  dele(str);
-  printf("%s", str);
+  int a = 2;
+  int b = 3;
+  printf("%d", a && b);
 }
