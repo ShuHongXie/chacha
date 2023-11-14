@@ -40,7 +40,7 @@ int main()
       if (i >= j)
       {                          // 特殊矩阵，只压下三角的值
         k = i * (i + 1) / 2 + j; // 二维数组和一维数组中原值的对应关系
-        printf("%d,%d\n", k, a[i][j]);
+        printf("%d\n", k);
         b[k] = a[i][j];
       }
       else
