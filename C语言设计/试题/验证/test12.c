@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define SQR(x) x *x
 
 // main()
 
@@ -91,9 +92,9 @@ main()
   //   printf("%d ", arr[i]);
   // }
 
-  int i = 100;
-  i = test();
-  printf("函数值为%d", i);
+  char a[10] = "study", *p;
+  p = a;
+  printf("超过为%d", *(p + 5));
 }
 
 void test()
