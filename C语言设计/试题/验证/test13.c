@@ -2,6 +2,6 @@
 
 void main()
 {
-  char c = 'A';
-  printf("%2c", c);
+  int a = 3, *p = &a;
+  printf("%d", *p);
 }

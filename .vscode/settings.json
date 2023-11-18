@@ -4,7 +4,8 @@
     "*.wxss": "css",
     "*.wxs": "javascript",
     "stdlib.h": "c",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "typeinfo": "c"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

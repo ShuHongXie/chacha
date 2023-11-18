@@ -62,7 +62,7 @@ int func(int a, int b)
   return (a + b);
 }
 
-main()
+void main()
 {
   // Çó½×³Ë
   // int di(int num);
@@ -92,9 +92,14 @@ main()
   //   printf("%d ", arr[i]);
   // }
 
-  char a[10] = "study", *p;
-  p = a;
-  printf("³¬¹ıÎª%d", *(p + 5));
+  struct student
+  {
+    char name[20];
+    int age;
+    char sex;
+  } stu[5], *p;
+  p = stu;
+  scanf("%d", p->age);
 }
 
 void test()
