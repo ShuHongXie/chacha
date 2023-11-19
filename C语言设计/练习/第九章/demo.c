@@ -44,15 +44,15 @@ void main()
     动态链表
     如何建立一个有两名学生学号和成绩数据的单向动态链表？
    */
-  struct student *head, *p;
-  head = p = (struct student *)malloc(LEN); // 开辟动态类型
-  scanf("%d,%f", &p->num, &p->score);
-  p = (struct student *)malloc(LEN);
-  scanf("%d,%f", &p->num, &p->score);
-  head->next = p;
-  p->next = NULL;
-  p = head;
-  printf("\n结点1:%d,%6.2f\n", p->num, p->score);
-  p = p->next;
-  printf("结点 2:%d,%6.2f\n", p->num, p->score);
+  // struct student *head, *p;
+  // head = p = (struct student *)malloc(LEN); // 开辟动态类型
+  // scanf("%d,%f", &p->num, &p->score);
+  // p = (struct student *)malloc(LEN);
+  // scanf("%d,%f", &p->num, &p->score);
+  // head->next = p;
+  // p->next = NULL;
+  // p = head;
+  // printf("\n结点1:%d,%6.2f\n", p->num, p->score);
+  // p = p->next;
+  // printf("结点 2:%d,%6.2f\n", p->num, p->score);
 }
