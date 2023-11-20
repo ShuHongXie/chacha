@@ -68,10 +68,10 @@ void swap(int *p1, int *p2)
   // *p2 = temp;
 
   // 错误情况1
-  // int *temp;  // 这里未给temp赋值，所以temp指向的单元也是不可预见的，对*temp就是向一个位置的存储单元赋值，
-  // *temp = *p1;
-  // p1 = *p2;
-  // p2 = *temp;
+  int *temp; // 这里未给temp赋值，所以temp指向的单元也是不可预见的，对*temp就是向一个位置的存储单元赋值，
+  *temp = *p1;
+  p1 = *p2;
+  p2 = *temp;
 
   // 错误情况2
   // int *temp;
