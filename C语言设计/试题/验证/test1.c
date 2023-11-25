@@ -1,20 +1,28 @@
 #include <stdio.h>
 
-int fun(int x)
+int f(int a)
 {
-  if (x / 2 > 1)
-  {
-    fun(x / 2);
-  }
-  return (printf("%d\n", x));
+  int b = 0;
+  static int c = 2;
+  b++;
+  c++;
+  return a + b + c;
 };
 
 int main()
 {
-  // int fun(int x);
-  // fun(7);
-  int j = 0;
-  --j;
-  printf("%d", j);
-  return 0;
+  // int f(int a);
+  // int a = 2, i;
+  // for (i = 0; i < 3; i++)
+  // {
+  //   printf("%4d", f(a));
+  // }
+  // int a[2][3] = {{1, 2, 3}, {4, 5, 6}};
+  // printf("%4d", *(*(a + 1)));
+
+  char s = '0';
+  if (s >= '0' && s <= '9')
+  {
+    printf("ÊÇÊı×Ö×Ö·û");
+  }
 }
