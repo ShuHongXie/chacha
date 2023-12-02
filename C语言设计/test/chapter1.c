@@ -7,7 +7,15 @@ int main()
   // printf("%d,%d\n", a, b);
   // return 0;
 
-  double d = 123.456789e100;
-  float f = d;
-  printf("%f", f);
+  // double d = 123.456789e100;
+  // float f = d;
+  // printf("%f", f);
+
+  char d[] = {'c', 'h', 'i', 'n', 'a'}; // 定义为字符数组的，长度为其实际内容长度
+
+  char str1[] = "ismyline";
+  char str2[8] = "ismyline";
+  printf("%d\n", sizeof(d));
+  printf("%d\n", sizeof(str1)); // 9 字符数组不指定长度时，会自动加上\0，长度会从8变成9
+  printf("%d\n", sizeof(str2));
 }
