@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Ö¸Õë´Ó´óµ½Ð¡ÅÅÐò
+// Ö¸ï¿½ï¿½Ó´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
 // void main()
 // {
 //   int a, b, *p1, *p2;
@@ -26,4 +26,9 @@ void main()
     str1[i] = str2[i - 10];
   }
   printf("%s", str1);
+
+  float f1 = 1.0;
+  float f2 = 3.0;
+  float z1 = f1 / f2;
+  printf("%f", z1);
 }
