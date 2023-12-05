@@ -25,10 +25,14 @@ void main()
   {
     str1[i] = str2[i - 10];
   }
-  printf("%s", str1);
+  printf("%s\n", str1);
 
   float f1 = 1.0;
   float f2 = 3.0;
   float z1 = f1 / f2;
-  printf("%f", z1);
+  printf("%f\n", z1);
+
+  int r1 = 10;
+  int r2 = 11;
+  printf("%d\n", r1 && r2);
 }
