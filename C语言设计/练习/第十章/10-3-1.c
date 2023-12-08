@@ -17,11 +17,13 @@ int main()
   ch = getchar();
   while (ch != '#')
   {
+
     fputc(ch, fp);
     putchar(ch);
     ch = getchar();
+    printf("%c\n", ch);
   }
   fclose(fp);
-  putchar(10);
+  putchar(10); // Êä³ö»»ÐÐ
   return 0;
 }

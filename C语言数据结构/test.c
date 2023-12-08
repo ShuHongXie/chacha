@@ -2,60 +2,43 @@
 
 void main()
 {
-  int arr[] = {4, 2, 1, 5};
-  int len = 4;
+  int arr[] = {4, 2, 1, 5, 10, 6};
+  int len = 6;
 
   // 插入排序
-  // for (int i = 1; i < len; i++)
-  // {
-  //   int j = i - 1;
-  //   int curr = arr[i];
-  //   while (j >= 0 && arr[j] > curr)
-  //   {
-  //     arr[j + 1] = arr[j];
-  //     j--;
-  //   }
-  //   arr[j + 1] = curr;
-  // }
+  for (int i = 1; i < len; i++)
+  {
+    int j = i - 1;
+    int curr = arr[i];
+    while (j >= 0 && arr[j] > curr)
+    {
+      arr[j + 1] = arr[j];
+      j--;
+    }
+    arr[j + 1] = curr;
+  }
 
   // 选择排序
   // for (int i = 0; i < len - 1; i++)
   // {
-
   //   int minIndex = i;
-  //   // printf("%d\n", minIndex);
-  //   for (int j = i + 1; j < len - 1; j++)
+  //   for (int j = i + 1; j < len; j++)
   //   {
   //     if (arr[minIndex] > arr[j])
   //     {
   //       minIndex = j;
   //     }
   //   }
-  //   // printf("%d,%d\n", minIndex, i);
   //   if (minIndex != i)
   //   {
-  //     int num = arr[i];
+  //     int temp = arr[i];
   //     arr[i] = arr[minIndex];
-  //     arr[minIndex] = num;
+  //     arr[minIndex] = temp;
   //   }
   // }
 
-  // 冒泡排序
-  for (int i = 0; i < len - 1; i++)
-  {
-    for (int j = 0; j < len - 1 - i; j++)
-    {
-      if (arr[j] > arr[j + 1])
-      {
-        int num = arr[j + 1];
-        arr[j + 1] = arr[j];
-        arr[j] = num;
-      }
-    }
-  }
-
   // 打印
-  for (int i = 0; i < 4; i++)
+  for (int i = 0; i < 6; i++)
   {
     printf("%d ", arr[i]);
   }
