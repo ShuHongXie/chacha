@@ -18,4 +18,8 @@ int main()
   printf("%d\n", sizeof(d));
   printf("%d\n", sizeof(str1)); // 9 字符数组不指定长度时，会自动加上\0，长度会从8变成9
   printf("%d\n", sizeof(str2));
+
+  int i = 11;
+  printf("%d", i++);
+  printf("%d", i);
 }
