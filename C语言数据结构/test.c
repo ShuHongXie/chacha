@@ -5,36 +5,36 @@ void main()
   int arr[] = {4, 2, 1, 5, 10, 6};
   int len = 6;
 
-  // 插入排序
-  // for (int i = 1; i < len; i++)
+  // 选择排序
+  // for (int i = 0; i < len; i++)
   // {
-  //   int curr = arr[i];
-  //   int j = i - 1;
-  //   while (j >= 0 && arr[j] > curr)
+  //   int key = i;
+  //   for (int j = i + 1; j < len; j++)
   //   {
-  //     arr[j + 1] = arr[j];
-  //     j--;
+  //     if (arr[key] > arr[j])
+  //     {
+  //       key = j;
+  //     }
   //   }
-  //   arr[j + 1] = curr;
+  //   if (key != i)
+  //   {
+  //     int temp = arr[i];
+  //     arr[i] = arr[key];
+  //     arr[key] = temp;
+  //   }
   // }
 
-  // 选择排序
-  for (int i = 0; i < len; i++)
+  // 插入排序
+  for (int i = 1; i < len; i++)
   {
-    int min = i;
-    for (int j = i + 1; j < len; j++)
+    int curr = arr[i];
+    int j = i - 1;
+    while (j >= 0 && arr[j] > curr)
     {
-      if (arr[j] < arr[min])
-      {
-        min = j;
-      }
+      arr[j + 1] = arr[j];
+      j--;
     }
-    if (min != i)
-    {
-      int temp = arr[i];
-      arr[i] = arr[min];
-      arr[min] = temp;
-    }
+    arr[j + 1] = curr;
   }
 
   // 打印
