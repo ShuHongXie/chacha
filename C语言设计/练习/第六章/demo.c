@@ -3,16 +3,16 @@
 
 void main()
 {
-    // 数组定义中的常量表达式不能使用变量
+    // ???鶨???е???????????????????
     // int len = 8;
     // int a[len] = {1, 2, 3, 4, 5};
     // printf("%d", a[5]);
 
-    // printf答应时遇到\0就中断
+    // printf????????\0???ж?
     // char c[10] = "Ha\0ppy";
     // printf("%s", c);
 
-    // 输入字符串
+    // ?????????
     // char str1[10], str2[10];
     // scanf("%s%s", str1, str2);
     // printf("%d", str1);
@@ -23,7 +23,7 @@ void main()
     // int a = strcmp(c2, c1);
     // printf("%d", a);
 
-    // 输入3个字符串，判断其大小
+    // ????3??????????ж????С
     // char string[20];
     // char str[3][20];
     // int i;
@@ -45,7 +45,7 @@ void main()
     // }
     // printf("The largest string is: %s\n", string);
 
-    // 输入一行字符，统计其中有多少个单词，单词之间用空格分隔开
+    // ????????????????????ж????????????????????????
     // char string[100];
     // int i, num = 0, word = 0;
     // char c;
@@ -65,12 +65,13 @@ void main()
     // }
     // printf("There are %d words in this line,\n", num);
 
-    // gets函数
+    // gets????
     // char s[100];
     // int c = gets(s);
     // printf("%s,%d,%d", s, strlen(s), c);
 
-    // strcat函数
+    // strcat????
     char str1[30] = "my love ";
-    printf("%s", strcat(str1, "shuhongxie"));
+    strcpy(str1, "shuhongxie");
+    printf("%s", str1);
 }
