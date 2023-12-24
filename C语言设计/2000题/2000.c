@@ -4,6 +4,6 @@
 void main()
 {
 
-  char a[10], b[10], *p = a, *q = b;
-  p = &9;
+  int a=3,b=2,c=1;
+  printf("%d", a>b>c);
 }
