@@ -21,5 +21,7 @@ int main()
 
   int i = 11;
   printf("%d", i++);
-  printf("%d", i);
+  printf("%d\n", i);
+
+  printf("%e", 1235.2321);
 }
