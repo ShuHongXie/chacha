@@ -3,7 +3,7 @@
 
 void main()
 {
-
-  int a=3,b=2,c=1;
-  printf("%d", a>b>c);
+  float c = 1.6;
+  int i = (int)c;
+  printf("%d", i);
 }
