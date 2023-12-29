@@ -23,5 +23,7 @@ int main()
   printf("%d", i++);
   printf("%d\n", i);
 
-  printf("%e", 1235.2321);
+  printf("%e\n", 1235.2321);
+  int a = 2, b = 0;
+  printf("%d", a && b);
 }
