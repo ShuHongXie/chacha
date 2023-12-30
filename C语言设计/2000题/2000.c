@@ -3,7 +3,14 @@
 
 void main()
 {
-  float c = 1.6;
-  int i = (int)c;
-  printf("%d", i);
+  int x;
+  scanf("%d", &x);
+  if (x <= 1)
+    ;
+  else
+    ;
+  if (x != 5)
+  {
+    printf("show %d\n", x);
+  }
 }

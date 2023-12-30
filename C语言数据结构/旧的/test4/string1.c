@@ -2,11 +2,11 @@
 #include <string.h>
 #define MAXLEN 35;
 
-// ä¸²é¡ºåºå­˜å‚¨ï¼Œåˆ†é…å›ºå®šé•¿åº¦
+// ´®Ë³Ğò´æ´¢£¬·ÖÅä¹Ì¶¨³¤¶È
 // typedef struct
 // {
-//   char ch[MAXLEN + 1]; // å­˜å‚¨ä¸²ä¸­çš„ä¸€ç»´æ•°ç»„
-//   int length;          // ä¸²çš„é•¿åº¦
+//   char ch[MAXLEN + 1]; // ´æ´¢´®ÖĞµÄÒ»Î¬Êı×é
+//   int length;          // ´®µÄ³¤¶È
 // }
 
 int getIndex1(char str[], char t[], int pos)
@@ -45,6 +45,6 @@ int main()
   char str[] = "aaaaaba";
   char t[] = "ba";
   int index = getIndex1(str, t, 2);
-  printf("strä¸­åŒ¹é…åˆ°tçš„å­—ç¬¦åºå·ä¸ºï¼š");
+  printf("strÖĞÆ¥Åäµ½tµÄ×Ö·ûĞòºÅÎª£º");
   printf("%d\n", index);
 }
