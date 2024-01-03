@@ -2,28 +2,25 @@
 
 int binarySearch(int arr[], int len, int key)
 {
-  int low = 0, high = len - 1, mid; // 一定要从0，和len-1开始
+  int high = len - 1;
+  int low = 0;
+  int mid;
   while (low <= high)
   {
     mid = (low + high) / 2;
-    // printf("%d %d %d %d\n", mid, low, high, arr[mid]);
-    if (arr[mid] > key)
-    {
-      high = mid - 1;
-    }
-    else if (arr[mid] < key)
+    if (key > arr[mid])
     {
       low = mid + 1;
     }
+    else if (key < arr[mid])
+    {
+      high = mid - 1;
+    }
     else
     {
-      printf("查询值为3的下标为%d\n", mid);
+      printf("key为%d的下标为%d", key, mid);
       break;
     }
-  }
-  if (low > high)
-  {
-    printf("未找到目标值\n");
   }
 }
 
@@ -47,25 +44,25 @@ void main()
   // }
 
   // 选择排序
-  for (int i = 0; i < len - 1; i++)
-  {
-    int index = i;
-    for (int j = i + 1; j < len; j++)
-    {
-      if (arr[j] < arr[index])
-      {
-        index = j;
-      }
-    }
-    if (i != index)
-    {
-      int temp = arr[i];
-      arr[i] = arr[index];
-      arr[index] = temp;
-    }
-  }
+  // for (int i = 0; i < len - 1; i++)
+  // {
+  //   int index = i;
+  //   for (int j = i + 1; j < len; j++)
+  //   {
+  //     if (arr[j] < arr[index])
+  //     {
+  //       index = j;
+  //     }
+  //   }
+  //   if (index != i)
+  //   {
+  //     int temp = arr[i];
+  //     arr[i] = arr[index];
+  //     arr[index] = temp;
+  //   }
+  // }
 
-  binarySearch(arr1, 7, 1);
+  binarySearch(arr1, 7, 63);
   // printf("查询值为3的下标为%d", binarySearch(arr1, 7, 10));
   // 遍历
   // for (int i = 0; i < 6; i++)
