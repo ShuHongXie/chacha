@@ -1,9 +1,11 @@
 
 #include <stdio.h>
+#include <string.h>
 
 void main()
 {
-  int x = 00001010;
-  x++;
-  printf("%d", x);
+  char str1[30] = "china";
+  char str2[] = "yes";
+  strcpy(str1, str2);
+  printf("%s", str1);
 }

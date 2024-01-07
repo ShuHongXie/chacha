@@ -1,9 +1,10 @@
 #include <stdio.h>
 
+// ???????
 int binarySearch(int arr[], int len, int key)
 {
-  int high = len - 1;
   int low = 0;
+  int high = len - 1;
   int mid;
   while (low <= high)
   {
@@ -18,10 +19,11 @@ int binarySearch(int arr[], int len, int key)
     }
     else
     {
-      printf("key为%d的下标为%d", key, mid);
+      printf("??????%d???????%d", key, mid);
       break;
     }
   }
+  printf("??????????");
 }
 
 void main()
@@ -30,7 +32,7 @@ void main()
   int len = 6;
   int arr1[] = {1, 3, 7, 9, 11, 22, 63};
 
-  // 插入排序
+  // ????????
   // for (int i = 1; i < len; i++)
   // {
   //   int curr = arr[i];
@@ -43,7 +45,7 @@ void main()
   //   arr[j + 1] = curr;
   // }
 
-  // 选择排序
+  // ???????
   // for (int i = 0; i < len - 1; i++)
   // {
   //   int index = i;
@@ -62,13 +64,26 @@ void main()
   //   }
   // }
 
-  binarySearch(arr1, 7, 63);
-  // printf("查询值为3的下标为%d", binarySearch(arr1, 7, 10));
-  // 遍历
-  // for (int i = 0; i < 6; i++)
-  // {
-  //   printf("%d ", arr[i]);
-  // }
+  // ???????
+  for (int i = 0; i < len; i++)
+  {
+    for (int j = 0; j < len - i - 1; j++)
+    {
+      if (arr[j] > arr[j + 1])
+      {
+        int temp = arr[j + 1];
+        arr[j + 1] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+
+  // binarySearch(arr1, 7, 103);
+  // ????
+  for (int i = 0; i < len; i++)
+  {
+    printf("%d ", arr[i]);
+  }
 }
 //
 //
@@ -87,7 +102,7 @@ void main()
 //
 //
 
-// 二分查找
+// ???????
 // int binarySearch(int *a, int n, int key)
 // {
 //   int low = 0, high = len - 1, mid;
@@ -110,11 +125,11 @@ void main()
 // }
 // if (low > high)
 // {
-//   printf("未找到目标值\n");
+//   printf("????????\n");
 // }
 // }
 
-// 鎻掑叆鎺掑簭
+// ????
 // for (int i = 1; i < len; i++)
 // {
 //   int key = arr[i];
@@ -127,7 +142,7 @@ void main()
 //   arr[j + 1] = key;
 // }
 
-// 閫夋嫨鎺掑簭
+// ????
 // for (int i = 0; i < len - 1; i++)
 // {
 //   int index = i;
