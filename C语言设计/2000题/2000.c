@@ -2,10 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 
-void main()
+int main()
 {
-  char str1[30] = "china";
-  char str2[] = "yes";
-  strcpy(str1, str2);
-  printf("%s", str1);
+  char str[20] = "ab\n\\0122\\\0";
+  printf("%d", strlen(str));
+  return 0;
 }
