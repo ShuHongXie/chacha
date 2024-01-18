@@ -11,13 +11,25 @@ struct student
 
 void main()
 {
-  // struct student
-  // {
-  //   int num;
-  //   char name[20];
-  //   char sex;
-  // } st1, st2 = {100, "谢小谢", 'M'};
-  // printf("%s", st1.name);
+  struct student
+  {
+    int num;
+    char name[20];
+    char sex;
+    int age;
+  } st1, st2 = {100, "谢小谢", 'M', 30};
+
+  union demo
+  {
+    short int i;
+    char ch;
+    float f;
+  } a, b, c;
+  a.i = 2;
+  printf("%d\n", a.i);
+  a.ch = 'Z';
+  printf("%c\n", a.ch);
+  printf("%d\n", a.i);
 
   // 定义结构体，输入数据
   // struct student
@@ -55,4 +67,15 @@ void main()
   // printf("\n结点1:%d,%6.2f\n", p->num, p->score);
   // p = p->next;
   // printf("结点 2:%d,%6.2f\n", p->num, p->score);
+
+  struct student stu[3] =
+      {
+          {10101, "Li Lin", 'M', 18},
+          {10102, "zhang Fun", 'M', 19},
+          {10104, "wang Min", 'E', 20}};
+  struct student *p = stu;
+  for (; p < stu + 3; p++)
+  {
+    printf("%5d%-20s %2c %4d\n", p->num, p->name, p->sex, p->age);
+  }
 }
