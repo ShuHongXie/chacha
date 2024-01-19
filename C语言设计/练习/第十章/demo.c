@@ -36,7 +36,7 @@ void main()
   // 将一个磁盘文件信息复制到另一个磁盘文件中，将
   FILE *in, *out;
   char ch, infile[10], outfile[10];
-  printf("请输入读入文件的名字：");
+  printf("请输入读入文件的名t字：");
   scanf("%s", infile);
   printf("请输入输出文件的名字：");
   scanf("%s", outfile);
