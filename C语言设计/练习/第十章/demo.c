@@ -16,18 +16,18 @@ void main()
   // char ch, filename[10];
   // printf("请输入所用的文件名：");
   // scanf("%s", filename);
-  // if ((fp = fopen("t5.txt", "r")) == NULL)
+  // if ((fp = fopen(filename, "w")) == NULL)
   // {
   //   printf("无法打开此文件\n");
   //   exit(0);
   // }
-  // ch = getchar();
+  // ch = getchar(); // ch用来接收在scanf语句时最后输入的回车符
   // printf("请输入一个准备存储到磁盘的字符串(以#结束：");
   // ch = getchar();
   // while (ch != '#')
   // {
   //   fputc(ch, fp);
-  //   putchar(ch);
+  //   // putchar(ch);
   //   ch = getchar();
   // }
   // fclose(fp);
@@ -36,7 +36,7 @@ void main()
   // 将一个磁盘文件信息复制到另一个磁盘文件中，将
   FILE *in, *out;
   char ch, infile[10], outfile[10];
-  printf("请输入读入文件的名t字：");
+  printf("请输入读入文件的名字：");
   scanf("%s", infile);
   printf("请输入输出文件的名字：");
   scanf("%s", outfile);
@@ -54,7 +54,7 @@ void main()
   while (!feof(in)) // 这里也可以写成ch != -1 或 ch != EOF
   {
     fputc(ch, out);
-    printf("%c\n", ch);
+    // printf("%c\n", ch);
     ch = fgetc(in);
   }
   printf("\n");
