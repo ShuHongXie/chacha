@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 // 折半查找
-int binarySearch(int arr[], int len, int key)
+void binarySearch(int arr[], int len, int key)
 {
   int low = 0;
   int high = len - 1;
   int mid;
   while (low <= high)
   {
-    int mid = (high + low) / 2;
+    mid = (low + high) / 2;
     if (key > arr[mid])
     {
       low = mid + 1;
@@ -19,11 +19,11 @@ int binarySearch(int arr[], int len, int key)
     }
     else
     {
-      printf("值为%d的关键字在数组中下标为%d", key, mid);
-      return 0;
+      printf("关键字为%d的下标为%d\n", key, mid);
+      return;
     }
   }
-  printf("关键字未找到");
+  printf("关键字为%d的下标未找到", key);
 }
 
 void main()
@@ -52,17 +52,17 @@ void main()
   // }
 
   // 插入排序
-  for (int i = 1; i < len; i++)
-  {
-    int curr = arr[i];
-    int j = i - 1;
-    while (j >= 0 && arr[j] > curr)
-    {
-      arr[j + 1] = arr[j];
-      j--;
-    }
-    arr[j + 1] = curr;
-  }
+  // for (int i = 1; i < len; i++)
+  // {
+  //   int j = i - 1;
+  //   int curr = arr[i]; // 这里一定要保留，不然会在下面的arr[j+1] = arr[j]被改变掉
+  //   while (j >= 0 && arr[j] > curr)
+  //   {
+  //     arr[j + 1] = arr[j];
+  //     j--;
+  //   }
+  //   arr[j + 1] = curr;
+  // }
 
   binarySearch(arr1, 7, 3);
   // 遍历
