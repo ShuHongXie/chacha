@@ -8,10 +8,10 @@ int main()
   // int(*p)[5] = a;
   // printf("%d\n", *(*p + 2));
   // printf("%d\n", **p);
-  int a, b;
-  scanf("%d", &a);
-  scanf("%d", &b);
-  printf("%d,%d", a, b);
+  int i, j;
+  for (i = 1; i < 5; i++)
+    for (j = 2; j <= i; j++)
+      putchar('#');
   return 0;
 }
 
