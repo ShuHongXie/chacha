@@ -1,11 +1,13 @@
 #include <stdio.h>
-void main()
+
+int main()
 {
-  int a = 6, b = 0;
-  if (a == 6)
-    a = a + 2;
-  b = b + 2;
-  else a = a + 3;
-  b = b + 3;
-  printf("%d,%d\n", a, b);
+  int a1, a2;
+  char c1, c2;
+  scanf("%d%c%d%c", &a1, &c1, &a2, &c2);
+  printf("%d,%c,%d,%c", a1, c1, a2, c2);
+  // scanf("%d%d", &a1, &a2);
+  // printf("%d,%d", a1, a2);
+  putchar('\n');
+  return 0;
 }

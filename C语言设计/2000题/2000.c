@@ -9,9 +9,8 @@ int main()
   // printf("%d\n", *(*p + 2));
   // printf("%d\n", **p);
   int i, j;
-  for (i = 1; i < 5; i++)
-    for (j = 2; j <= i; j++)
-      putchar('#');
+  printf("\\n");
+
   return 0;
 }
 
