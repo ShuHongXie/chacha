@@ -8,8 +8,15 @@ int main()
   // int(*p)[5] = a;
   // printf("%d\n", *(*p + 2));
   // printf("%d\n", **p);
-  int i, j;
-  printf("\\n");
+  int n = 0, m = 0, x = 2;
+  if (!n)
+    x = -1;
+  if (m)
+    x = x + 1;
+  printf("%d\n", x);
+  if (x)
+    x = -3;
+  printf("%d\n", x);
 
   return 0;
 }
