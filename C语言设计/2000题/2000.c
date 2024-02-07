@@ -8,16 +8,18 @@ int main()
   // int(*p)[5] = a;
   // printf("%d\n", *(*p + 2));
   // printf("%d\n", **p);
-  int n = 0, m = 0, x = 2;
-  if (!n)
-    x = -1;
-  if (m)
-    x = x + 1;
-  printf("%d\n", x);
-  if (x)
-    x = -3;
-  printf("%d\n", x);
-
+  // char str[12] = {'C', 'z'};
+  char str1[] = {'C', 'z'};  // 3
+  char str2[] = {"Cz"};      // 2
+  char str3[] = "Cz";        // 2
+  char str4[3] = {'C', 'z'}; // 2
+  char str5[3] = "Cz";       // 2
+  // printf("%d\n", strlen(str));
+  printf("%d\n", sizeof(str1));
+  printf("%d\n", sizeof(str2));
+  printf("%d\n", sizeof(str3));
+  printf("%d\n", sizeof(str4));
+  printf("%d\n", sizeof(str5));
   return 0;
 }
 
