@@ -9,17 +9,13 @@ int main()
   // printf("%d\n", *(*p + 2));
   // printf("%d\n", **p);
   // char str[12] = {'C', 'z'};
-  char str1[] = {'C', 'z'};  // 3
-  char str2[] = {"Cz"};      // 2
-  char str3[] = "Cz";        // 2
-  char str4[3] = {'C', 'z'}; // 2
-  char str5[3] = "Cz";       // 2
-  // printf("%d\n", strlen(str));
-  printf("%d\n", sizeof(str1));
-  printf("%d\n", sizeof(str2));
-  printf("%d\n", sizeof(str3));
-  printf("%d\n", sizeof(str4));
-  printf("%d\n", sizeof(str5));
+
+  int a[3][4] = {{1, 3, 5, 7}, {6, 11, 13, 15}, {17, 19, 21, 23}};
+  int(*p)[4] = a + 1;
+  printf("%d\n", (*p)[1]);
+  printf("%d\n", *p[1]);
+  printf("%d\n", *(*(p + 1) + 1));
+
   return 0;
 }
 
