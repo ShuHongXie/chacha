@@ -3,9 +3,7 @@
 // 折半查找
 void binarySearch(int arr[], int len, int key)
 {
-  int low = 0;
-  int high = len - 1;
-  int mid;
+  int low = 0, high = len - 1, mid;
   while (low <= high)
   {
     mid = (high + low) / 2;
@@ -19,33 +17,33 @@ void binarySearch(int arr[], int len, int key)
     }
     else
     {
-      printf("查找关键字等于%d的值的下标为%d", key, mid);
-      return;
+      printf("关键字为%d的数字在数组中的下标为%d\n", key, mid);
+      break;
     }
   }
-  printf("关键字%d不在数组内", key);
+  printf("关键字为%d的数字在在数组中不存在\n", key);
 }
 
 // 插入排序
 void insertSort(int arr[], int len)
 {
-  for (int i = 1; i < len; i++)
-  {
-    int j = i - 1;
-    int curr = arr[i];
-    while (j >= 0 && arr[j] > curr)
-    {
-      arr[j + 1] = arr[j];
-      j--;
-    }
-    arr[j + 1] = curr;
-  }
+  // for (int i = 1; i < len; i++)
+  // {
+  //   int j = i - 1;
+  //   int curr = arr[i];
+  //   while (j >= 0 && arr[j] > curr)
+  //   {
+  //     arr[j + 1] = arr[j];
+  //     j--;
+  //   }
+  //   arr[j + 1] = curr;
+  // }
 }
 
 // 选择排序
 void selectSort(int arr[], int len)
 {
-  for (int i = 0; i < len - 1; i++)
+  for (int i = 0; i < len; i++)
   {
     int index = i;
     for (int j = i + 1; j < len; j++)
@@ -55,11 +53,11 @@ void selectSort(int arr[], int len)
         index = j;
       }
     }
-    if (i != index)
+    if (index != i)
     {
-      int curr = arr[i];
+      int num = arr[i];
       arr[i] = arr[index];
-      arr[index] = curr;
+      arr[index] = num;
     }
   }
 }
@@ -67,9 +65,9 @@ void selectSort(int arr[], int len)
 // 冒泡排序
 void bubbleSort(int arr[], int len)
 {
-  for (int i = 0; i < len; i++)
+  for (int i = 0; i < len - 1; i++)
   {
-    for (int j = 0; j < len - i - 1; j++)
+    for (int j = 0; j < len - 1 - i; j++)
     {
       if (arr[j] > arr[j + 1])
       {
@@ -92,14 +90,14 @@ void main()
 
   // insertSort(arr, len);
   // selectSort(arr, len);
-  bubbleSort(arr, len);
+  // bubbleSort(arr, len);
 
-  // binarySearch(arr1, 7, 100);
+  binarySearch(arr1, 7, 100);
   // 遍历
-  for (int i = 0; i < len; i++)
-  {
-    printf("%d ", arr[i]);
-  }
+  // for (int i = 0; i < len; i++)
+  // {
+  //   printf("%d ", arr[i]);
+  // }
 }
 //
 //
