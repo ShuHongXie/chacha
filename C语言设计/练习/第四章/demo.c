@@ -18,22 +18,26 @@ void main()
   // }
   // printf("a=%d", a);
 
-  int a = 1;
-  switch (a)
-  {
-  case 1:
-    printf("ÊÇµÚÒ»\n");
-  case 2:
-    printf("ÊÇµÚ¶þ\n");
-  default:
-    printf("ÊÇÄ¬ÈÏ\n");
-  }
+  // int a = 1;
+  // switch (a)
+  // {
+  // case 1:
+  //   printf("ï¿½Çµï¿½Ò»\n");
+  // case 2:
+  //   printf("ï¿½ÇµÚ¶ï¿½\n");
+  // default:
+  //   printf("ï¿½ï¿½Ä¬ï¿½ï¿½\n");
+  // }
 
   // double x, fractpart, intpart;
 
   // x = 1234;
   // fractpart = modf(x, &intpart);
 
-  // printf("ÕûÊý²¿·Ö = %lf\n", intpart);
-  // printf("Ð¡Êý²¿·Ö = %lf \n", fractpart);
+  // printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ = %lf\n", intpart);
+  // printf("Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ = %lf \n", fractpart);
+  do
+  {
+    int a = 1;
+  } while (0);
 }
