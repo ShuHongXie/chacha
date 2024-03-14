@@ -15,16 +15,16 @@ int main()
   // printf("%d\n", *p[1]);
   // printf("%d\n", (*p)[1]);
   // printf("%d\n", *p[1]);
-  char *str[] = {"abcd",
-                 "efgh",
-                 "ijkl"};
-  int n1[] = {1, 3, 5, 7}, *s1 = n1;
-  int n2[] = {6, 11, 13, 15}, *s2 = n2;
-  int n3[] = {17, 19, 21, 23}, *s3 = n3;
-  int *num[] = {s1, s2, s3};
-  char *s = "hello";
-  printf("%s\n", s);
-  printf("%s\n", *(str + 1) + 1);
+  // char *str[] = {"abcd",
+  //                "efgh",
+  //                "ijkl"};
+  // int n1[] = {1, 3, 5, 7}, *s1 = n1;
+  // int n2[] = {6, 11, 13, 15}, *s2 = n2;
+  // int n3[] = {17, 19, 21, 23}, *s3 = n3;
+  // int *num[] = {s1, s2, s3};
+  // char *s = "hello";
+  // printf("%s\n", s);
+  // printf("%s\n", *(str + 1) + 1);
   // printf("%s", str[2] + 1);
   // int arr[20] = {1, 10, 3, 4, 5, 6}, *p1 = arr;
   // arr[1] = p1[2];
@@ -49,6 +49,9 @@ int main()
   //   printf("����3\n");
   // }
   // return 0;
+  char *str[] = {"abcd", "efgh", "ijkl"};
+
+  printf("%c", *(*(str + 1) + 1));
 }
 
 void link_string(char *arr1, char *arr2)
