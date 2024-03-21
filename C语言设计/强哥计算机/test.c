@@ -71,8 +71,8 @@ int main()
   // printf("%d", *p);
 
   int a, b;
-  scanf("%d%d", &a, &b);
-  printf("%d,%d", a, b);
+
+  printf("%d", strlen("xyz\0hhh"));
 
   // p[1] = 2;
 
