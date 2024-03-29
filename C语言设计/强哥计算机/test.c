@@ -3,7 +3,7 @@
 
 enum Color
 {
-  BLUE, // ע��������,���зָ���������;
+  BLUE, // ?????????,???��??????????;
   RED,
   PINK,
   BLACK,
@@ -28,7 +28,7 @@ int main()
   // long num = 1, i;
   // printf("%d", -1 && -1);
 
-  // ��ӡ9*9�˷���
+  // ???9*9?????
   // for (int i = 1; i <= 9; i++)
   // {
   //   for (int j = 1; j <= i; j++)
@@ -65,16 +65,28 @@ int main()
 
   // printf("%d\n", s);
 
-  // static int a[3][4] = {{1, 2, 3}, {4, 5}, {6, 7, 8}};
-  // int *p;
-  // p = a[0];
-  // printf("%d", *p);
+  int a[3][3] = {{1, 2, 3}, {4, 5, 10}, {6, 7, 8}};
+  // int *p = a;
+  // p = p + 3;
+  // printf("p��ֵΪ%d\n", *p);
 
-  int a, b;
+  // int(*p)[3] = a;
+  // printf("%d\n", *p[2]);
+  // printf("%d\n", (*p)[6]);
 
-  printf("%d", strlen("xyz\0hhh"));
+  char *str[] = {{1, 2, 3}, {4, 5, 10}, {6, 7, 8}};
+  printf("ֵΪ%d\n", str[1][1]);
+
+  // printf("%d\n", strlen("xyz\0hhh"));
 
   // p[1] = 2;
+
+  char *str[] = {"abcd", "efgh", "ijkl"};
+  printf("%s\n", str[1]);
+  printf("%c\n", str[1][0]);
+  printf("%s", *(str + 1));
+  printf("%s", *(str + 1) + 1);
+  printf("%c", *(*(str + 1) + 1));
 
   return 0;
 }

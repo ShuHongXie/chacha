@@ -1,4 +1,32 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+void ed()
+{
+  FILE *in, *out;
+  char ch, filename1[100], filename2[100];
+  scanf("%s", filename1);
+  scanf("%s", filename2);
+  if ((in = fopen(filename1, "r")) == NULL)
+  {
+    printf("无法打开此文件\n");
+    exit(0);
+  }
+
+  if ((out = fopen(filename2, "w")) == NULL)
+  {
+    printf("无法打开此文件\n");
+    exit(0);
+  }
+  ch = fgetc(in);
+  while (!feof(in))
+  {
+    fputc(ch, out);
+    ch = fgetc(in);
+  }
+  fclose(in);
+  fclose(out);
+}
 
 // 字符串连接
 void strCat(char *p1, char *p2)
@@ -57,8 +85,6 @@ void binarySearch(int arr[], int len, int key)
     }
   }
   printf("关键字%d未找到\n", key);
-  // printf("关键字为%d的下标为%d\n", key, mid);
-  // printf("关键字%d未找到\n", key);
 }
 
 // 插入排序
@@ -90,7 +116,7 @@ void selectSort(int arr[], int len)
         curr = j;
       }
     }
-    if (curr != i)
+    if (i != curr)
     {
       int num = arr[i];
       arr[i] = arr[curr];
@@ -102,9 +128,9 @@ void selectSort(int arr[], int len)
 // 冒泡排序
 void bubbleSort(int arr[], int len)
 {
-  for (int i = 0; i < len; i++)
+  for (int i = 0; i < len - i; i++)
   {
-    for (int j = 0; j < len - i; j++)
+    for (int j = 0; j < len - i - 1; j++)
     {
       if (arr[j] > arr[j + 1])
       {
@@ -121,27 +147,30 @@ void main()
   void insertSort(int arr[], int len);
   void selectSort(int arr[], int len);
   void bubbleSort(int arr[], int len);
-  int arr[] = {4, 2, 1, 5, 10, 6};
-  int len = 6;
+  int arr[] = {4, 2, 1, 5, 10, 9, 50, 60};
+  int len = 8;
   int arr1[] = {1, 3, 7, 9, 11, 22, 63};
 
   // insertSort(arr, len);
-  selectSort(arr, len);
-  // bubbleSort(arr, len);
+  // selectSort(arr, len);
+  bubbleSort(arr, len);
 
-  // binarySearch(arr1, 7, 22);
+  binarySearch(arr1, 7, 22);
   // 遍历
-  for (int i = 0; i < len; i++)
-  {
-    printf("%d ", arr[i]);
-  }
+  // for (int i = 0; i < len; i++)
+  // {
+  //   printf("%d ", arr[i]);
+  // }
 
-  char s1[20];
-  char s2[20] = "i love ";
-  char s3[20] = "hui cai lin";
-  char *p1 = s1, *p2 = s2;
-  char *p3 = s3;
+  // char s1[20];
+  // char s2[20] = "aloves dsds 是多少";
+  // char s3[20] = "alove";
+  // char *p1 = s1, *p2 = s2;
+  // char *p3 = s3;
+
+  ed();
   // strCpy(s1, s2); // 传递地址
+  // printf("%s", s1);
   // printf("%d", strCmp(p2, p3)); // 传递地址
   // printf("%d", strCmp(p2, p3));
   // strCat(s2, s3);
